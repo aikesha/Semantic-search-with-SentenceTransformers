@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ result.Title }}{% endblock %}
+
+{% block content %}
+<div class="result-container">
+  <div class="result-item">
+    <h2>{{ result.title }}</h2>
+    <p>Description: {{ result.description }}</p>
+    <p>Tags: {{ result.tags }}</p>
+    <p>Category: {{ result.category }}</p>
+    <a href="{{ url_for('search') }}">Back to Search Results</a>
+  </div>
+</div>
+{% endblock %}

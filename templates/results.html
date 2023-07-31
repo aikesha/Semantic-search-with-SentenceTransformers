@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<h2>Топ запросов</h2>
+
+{% for result in results %}
+<div class="result-container">
+  <div class="result-item">
+    <a href="{{ url_for('result_page', result_id=result.id) }}">
+      <p>Title: {{ result.Title }}</p>
+    </a>
+    <p>Description: {{ result.Description }}</p>
+    <!-- <p>Relevance: {{ result.Relevance }}</p> -->
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+<style>
+    body {
+  margin: 0;
+  background-color: #ffffff; /* White background */
+  font-family: Arial, sans-serif;
+}
+</style>

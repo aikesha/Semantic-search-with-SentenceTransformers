@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}Search Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+  <!-- <div class="logo">
+    <img src="{{ url_for('static', filename='logodataru.png') }}" alt="Your Logo" class="logo">
+  </div> -->
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="/login">Login</a>
+    <a href="#">Sign Up</a>
+  </div>
+</nav>
+
+<div class="container">
+  {% block content %}{% endblock %}
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

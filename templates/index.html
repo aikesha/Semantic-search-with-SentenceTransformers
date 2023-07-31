@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="search-container">
+  <img src="{{ url_for('static', filename='logodataru.png') }}" alt="Your Logo" class="logo">
+  <h2>Search Engine</h2>
+
+  <form action="/search" method="post" class="search-form">
+    <label for="question">Enter your question:</label><br>
+    <input type="text" id="question" name="question"><br>
+    <input type="submit" value="Search">
+  </form>
+</div>
+{% endblock %}

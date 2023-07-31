@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  background-color: #ffffff; /* White background */
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #4CAF50; /* Green navbar background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff; /* White text for navbar links */
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  color: #ffff00; /* Yellow text for hovered navbar links */
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  color: #ffffff; /* White text for login and sign-up buttons */
+  background-color: #4CAF50; /* Green background for login and sign-up buttons */
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.auth-buttons a:hover {
+  background-color: #45a049; /* Darker green background for hovered buttons */
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4CAF50; /* Green container */
+  color: #ffffff; /* White text inside the container */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto; /* Center the container horizontally */
+}
+
+.logo {
+  width: 100px; /* Set the width of the logo */
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333; /* Black text for the input fields */
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #ffffff; /* White background for the submit button */
+  color: #000000; /* Black text for the submit button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Black text for the input fields */
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffffff; /* White background for the submit button */
+    color: #000000; /* Black text for the submit button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4CAF50; /* Green container */
+    color: #ffffff; /* White text inside the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto; /* Center the container horizontally */
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    border: 1px solid #4CAF50; /* Green border for each result container */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .result-item {
+    text-align: left; /* Align the text to the left within the result container */
+  }
